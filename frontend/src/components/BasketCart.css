@@ -1,0 +1,163 @@
+.basket-body{
+/* Frame 14 */
+/* Auto layout */
+
+display: none;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 32px 16px;
+gap: 32px;
+
+position: absolute;
+width: 325px;
+height: 677px;
+top: 78px;
+border: solid 1px gainsboro;
+border-radius: 5px;
+box-shadow: 5px;
+background-color: #fff;
+left: 1500px;
+
+}
+.basket-frame12{
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 160%;
+/* identical to box height, or 26px */
+
+text-align: right;
+
+color: #1D1F22;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    
+    width: 293px;
+    height: 538px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.basket-cart{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 293px;
+height: 190px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.basket-cards-body{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 293px;
+height: 420px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.cart{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 293px;
+height: 190px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.cart-frame-9{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 164px;
+height: 190px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.cart-frame-7{
+    /* Frame 7 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 136px;
+height: 190px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.cart-img{
+    width: 121px;
+height: 190px;
+
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+background: cadetblue;
+}
