@@ -5,7 +5,7 @@ query{
       name
     }
 }
-  `;
+`;
 
 export const useCategories=()=>{
     const { loading, error, data } = useQuery(GET_CATEGORIES);

@@ -5,7 +5,8 @@ import { useCategory } from '../hooks/useCategory'
 import Loader1 from '../components/Loading/Loader1';
 function Products() {
     const {categoryname}=useParams();
-    const { loading, error, data } = useCategory(categoryname);
+    const category= categoryname ? categoryname : 'all';
+    const { loading, error, data } = useCategory(category);
     return (
         <>
             {loading ? <Loader1/> : error ? <p>Error...</p>:

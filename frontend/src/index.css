@@ -109,7 +109,20 @@ nav{
     display: flex;
     flex-direction: column;
   }
-  
+button{
+  background-color: #272b27; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
   .product-name {
     flex-direction: column;
     width: 354px;
@@ -118,7 +131,7 @@ nav{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 160%;
     /* identical to box height, or 29px */
     
@@ -129,7 +142,9 @@ nav{
     
     color: #1D1F22;
   }
-  
+  .product-name>a{
+    text-decoration: none;
+  }
   .product-price {
     width: 58px;
     height: 29px;

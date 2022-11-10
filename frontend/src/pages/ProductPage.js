@@ -24,7 +24,7 @@ function ProductPage({product}) {
                 <div className='productsList'>
                  {data.product.name}
                  <img src={data.product.gallery[0]} height="420" width="327" alt={data.product.name}/>
-                 <button onClick={AddtoCardHandler}>Add to Card</button>
+                 <button className='button' onClick={AddtoCardHandler}>Add to Card</button>
                  
                 </div> 
              

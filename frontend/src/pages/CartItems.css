@@ -1,0 +1,15 @@
+.Cart-Items{
+    margin: auto;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .Cart-Container{
+    padding: 40px;
+    width: 70%;
+    height: 85%;
+    background-color: #ffffff;
+
+   }
