@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import {useParams } from 'react-router-dom'
 import {useDispatch,useSelector} from 'react-redux'
 import {addToCart,removeFromCard} from '../redux/actions'
+import { Link } from 'react-router-dom';
 import './CartItems.css'
 function CartItmes() {
   const {id,qty}=useParams()
@@ -25,9 +26,14 @@ useEffect(()=>{
       <h2>Items</h2>
         {cartItems.map((item,index)=>{
             return <div key={index} className='Cart-Items'>
+              <Link to={`/product/${item.id}`}>{item.id}</Link>
+              <div className="counter">
+              <div className="btn">+</div>
+              <div className="count">{item.qty}</div>
+              <div className="btn">-</div>
+              </div>
+            
               
-              <h2 key={index}>{item.id}</h2>
-              <h4> Ilość {item.qty}</h4>
               <button onClick={()=>removeFromCartHandler(item.id)}>Delete</button>             
                  </div>    
         })}

@@ -10,7 +10,7 @@ export const cartReducer=(state={cartItems:[]},action)=>{
                   ...state,
                   cartItems:state.cartItems.map(x=>
                       x.id===existItem.id ? {...item} : x,
-                      ),itemqty:state.itemqty
+                      ),itemqty:state.itemqty+1
                      
                      
              }     
