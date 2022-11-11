@@ -7,12 +7,11 @@ import { useProduct } from '../hooks/useProduct';
 function ProductPage({product}) {
  
     const {id}=useParams();
-    const [qty,setQty]=useState(1);
+    const [qty,setQty]=useState(0);
     const { loading, error, data } = useProduct(id);
     const navigate=useNavigate()
     const AddtoCardHandler=()=>{
         setQty({qty:1});
-  
         navigate(`/cart/${id}/${qty}`)
     }
 
