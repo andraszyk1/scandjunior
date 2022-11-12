@@ -17,8 +17,8 @@ const Categories =props=>{
         <div className='nav-box'>
           <div className='nav-left'>
             {data.categories.map((categories) => {
-            return <div key={categories.name} className="category-body">
-                      <Link to={categories.name}>{categories.name}</Link>
+            return <div key={categories.name} className="nav-category-link">
+                      <Link to={categories.name} className="active">{categories.name}</Link>
                   </div>})}
             </div>
             <div className='nav-right'>

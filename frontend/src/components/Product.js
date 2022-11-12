@@ -7,7 +7,7 @@ console.log(product)
   return (    
     <div className="product-element">
     <div className="product-img">
-      <img src={product.gallery[0]} height="420" width="327" alt={product.name}/>
+      <img src={product.gallery[0]} height="330" width="354" alt={product.name}/>
     </div>
   
       <div className="product-row">

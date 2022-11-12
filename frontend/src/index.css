@@ -32,6 +32,7 @@ nav{
   display: flex;
   align-items: center;
   margin: 1rem 0 0 1rem;
+  text-transform: uppercase;
 }
 .nav-right{
   display: flex;
@@ -42,19 +43,24 @@ nav{
   right: 10px;
   cursor: pointer;
 }
-.category-body{
 
-  /* identical to box height, or 19px */
-  display: inline;
-  text-transform: uppercase;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px 0 10px
-
+.nav-category-link{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+   
 }
-.category-body:hover{
-    border-bottom: rgb(100, 237, 155) solid 3px;
-    padding: 0 7px 0 7px
+.nav-category-link:hover {
+  border-bottom: 3px solid #5ECE7B;
+}
+
+.nav-category-link.active {
+  border-bottom: 3px solid #5ECE7B;
 }
 a{
     font-family: 'Raleway';
@@ -89,10 +95,8 @@ a{
     background: #FFFFFF;
   }
   
-  .product-img img {
-    border-radius: 7px 0 0 7px;
-    display: flex;
-    flex-direction: column;
+  .product-img img{
+    object-fit: cover;
   }
 button{
   background-color: #272b27; /* Green */
