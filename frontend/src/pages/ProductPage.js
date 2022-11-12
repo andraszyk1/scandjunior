@@ -19,13 +19,17 @@ function ProductPage({product}) {
     return (
         <>
             {loading ? <p>Loading...</p> : error ? <p>Error...</p>:
-       
                 <div className='productsList'>
-                      
-                    <div className='product-element'>
-             
-                 <div className='product-row'>
-                 <img src={data.product.gallery[0]} height="420" width="327" alt={data.product.name}/>
+                <div className='product-img-column'>
+                    {data.product.gallery.map((img,index)=>{
+                    return (
+                        <img src={img} height="150" width="150" alt={data.product.name}/> 
+                    )
+                    })}
+                </div>
+            
+                 <div className='product-img'>
+                    <img src={data.product.gallery[0]} height="551" width="530" alt={data.product.name}/>
                  </div>
                  <div className='product-row'>
                  {data.product.name}
@@ -36,13 +40,12 @@ function ProductPage({product}) {
                  <div className='product-row'>
                  {data.product.prices.map((price,index)=>{
                     return <div key={index}> {price.amount}  {price.currency.label }</div>
-                   
                  })}
                  </div>
                  {data.product.inStock ? "In stock" : "Out of stock"}
                  <button className='button' onClick={AddtoCardHandler}>Add to Card</button>
                  </div>
-                </div> 
+              
              
             }
        

@@ -12,7 +12,7 @@ font-family: 'Raleway';
 font-style: normal;
 font-weight: 400;
 font-size: 42px;
-color: #1D1F22;
+
 }
 
 
@@ -82,7 +82,7 @@ a{
     margin: 40px;
     width: 386px;
     height: 444px;
-    background: #FFFFFF;
+
   }
   
   
@@ -92,9 +92,14 @@ a{
     justify-content: flex-end;
     align-items: center;
     padding: 16px;
-    background: #FFFFFF;
-  }
   
+  }
+  .product-img-column{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+
+  }
   .product-img img{
     object-fit: cover;
   }
