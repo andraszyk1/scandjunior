@@ -21,10 +21,14 @@ function ProductPage({product}) {
             {loading ? <p>Loading...</p> : error ? <p>Error...</p>:
             
                 <div className='productsList'>
-                 {data.product.name}
+                    <div className='product-element'>
+             
+                 <div className='product-img'>
                  <img src={data.product.gallery[0]} height="420" width="327" alt={data.product.name}/>
+                 </div>
+                 {data.product.name}
                  <button className='button' onClick={AddtoCardHandler}>Add to Card</button>
-                 
+                 </div>
                 </div> 
              
             }

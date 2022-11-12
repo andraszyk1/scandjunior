@@ -53,7 +53,7 @@ nav{
 
 }
 .category-body:hover{
-    border-bottom: cornflowerblue solid 3px;
+    border-bottom: rgb(100, 237, 155) solid 3px;
 }
 a{
     font-family: 'Raleway';
