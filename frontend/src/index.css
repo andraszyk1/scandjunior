@@ -54,6 +54,7 @@ nav{
 }
 .category-body:hover{
     border-bottom: rgb(100, 237, 155) solid 3px;
+    padding: 0 7px 0 7px
 }
 a{
     font-family: 'Raleway';
@@ -67,41 +68,25 @@ a{
    
 }
 .product-element {
-  
     display: flex;
     flex-direction: column;
-    justify-content:s;
+    text-decoration: none;
     align-items: center;
     padding: 16px;
     margin: 40px;
-    
     width: 386px;
     height: 444px;
-    
-    /* --c-white */
-    
     background: #FFFFFF;
-    
-    /* Inside auto layout */
-    
-  
   }
   
   
-  .product-img {
+  .product-row {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     padding: 16px;
-    
-   
-    
-    /* --c-white */
-    
     background: #FFFFFF;
-    
-   
   }
   
   .product-img img {
