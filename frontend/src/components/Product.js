@@ -11,7 +11,6 @@ function Product({product}) {
     </div>
   
       <div className="product-name">
-        {product.name}
         <Link to={`/product/${product.id}`}>{product.name}</Link>
       </div>
    

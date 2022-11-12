@@ -55,7 +55,7 @@ nav{
 .category-body:hover{
     border-bottom: cornflowerblue solid 3px;
 }
-.category-body>a{
+a{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;

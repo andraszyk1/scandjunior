@@ -26,13 +26,12 @@ useEffect(()=>{
       <h2>Items</h2>
         {cartItems.map((item,index)=>{
             return <div key={index} className='Cart-Items'>
-              <Link to={`/product/${item.id}`}>{item.id}</Link>
               <div className="counter">
               <div className="btn">+</div>
               <div className="count">{item.qty}</div>
               <div className="btn">-</div>
               </div>
-            
+              <Link to={`/product/${item.id}`}>{item.id}</Link>
               
               <button onClick={()=>removeFromCartHandler(item.id)}>Delete</button>             
                  </div>    

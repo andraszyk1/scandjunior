@@ -6,6 +6,11 @@
     justify-content: space-between;
     align-items: center;
    }
+   .Cart-Items>a{
+    text-decoration: none;
+    text-justify: auto;
+    color: black;
+   }
    .Cart-Container{
     padding: 40px;
     width: 70%;
