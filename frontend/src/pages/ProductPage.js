@@ -21,7 +21,7 @@ function ProductPage({product}) {
             {loading ? <p>Loading...</p> : error ? <p>Error...</p>:
        
                 <div className='productsList'>
-                       {  console.log(data.product.prices)}
+                      
                     <div className='product-element'>
              
                  <div className='product-row'>
